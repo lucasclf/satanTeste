@@ -4,7 +4,7 @@
 // Senha precisa ter min 6 e max 12 caracteres
 
 ///////////////////////////////////////////////////////////////////
-import * as validaCpf from './validadorCPF'
+const validaCpf = require('./validadorCPF')
 
 class ValidarCadastro {
     constructor() {
