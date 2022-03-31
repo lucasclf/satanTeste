@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(87, 19, 66);
+}
+
+section p {
+    text-align: left;
+    margin-left: 0;
+}
+
+.cadastro{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px 1px whitesmoke;
+    min-width: 310px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 300%;
+    text-align: center;
+    text-transform:uppercase;
+    margin: 5px
+}
+
+p{
+    margin: 5px;
+    font-size: 150%;
+    text-align: center;
+
+}
+
+.formulario{
+    padding: 20px;
+    width: 90%;
+}
+
+
+label{
+    font-size: 120%;
+    font-weight: bold;
+    display: block;
+}
+
+input{
+    padding: 2px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 24px;
+    font-size: 16px;
+}
+
+.cria_cadastro p{
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.btn{
+    margin: 10px;
+    display: flex;
+    justify-content:space-around;
+}
+
+button{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.cadastrar{
+    background-color: rgb(242, 253, 241);
+}
+
+.erro_preenchimento{
+    color: red;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cancelar{
+    background-color: rgb(253, 241, 241);
+}
+
+
+@media (min-width: 576px) {
+    .cadastro{
+    width: 80%;
+    min-width: 545px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .cadastro{
+    display: flex;
+    }
+.dados_pessoais{
+    display: flex;
+    flex-direction: row;
+
+    }
+.cpf, .email{
+    width: 50%;
+    }
+
+.cpf input{
+    margin-right: 100px;
+    width: 150px;
+    }
+}
+
+@media (min-width: 992px){
+    .cadastro{
+        width: 65%;
+        min-width: 545px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de cadastro</title>
+    <link rel="stylesheet" href="./assets/formulario.css">
+</head>
+<main>
+
+    <body>
+        <div class="cadastro">
+            <h1>Cadastro</h1>
+            <p>Para se cadastrar em nossos serviços, preencha todos os campos abaixo:
+                <!--
+                CPF precisa ser válido
+                Nome de usuário não permite caracteres especiais, apenas letras e numeros
+                Nome de usuário deve ter min 3 e max 12 caracteres
+                Senha precisa ter min 6 e max 12 caracteres
+            -->
+            </p>
+            <section class="formulario">
+                <form action="/" method="post" class="form"> 
+                    <p>
+                        Dados pessoais:
+                    </p>
+                    <div class="nome">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Ulisses José Peralta" value="">
+                    </div>
+
+                    <div class="dados_pessoais">
+                        <div class="cpf">
+                            <label for="CPF">CPF:</label>
+                            <input type="number" class="cpf" name="CPF" id="cpf"  placeholder="apenas numeros" value="" maxlength="11">
+                        </div>
+                        <div class="email">
+                            <label for="email">e-Mail:</label>
+                            <input type="email" name="email" id="email" placeholder="email@provedor.com.br" value="">
+                        </div>
+                    </div>
+<br>
+                    <p>Dados de usuário:</p>
+                    <div class="cria_cadastro">
+                        <label for="usuario">Nome de usuário:</label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Crie um nome de usuário" value="">
+                        <p>(Deve conter entre 3 e 12 caracteres sendo, ao menos, uma letra)</p>
+
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" placeholder="Crie uma senha" value="">
+                        <p>(Deve conter o mínimo de 6 caracteres sendo, ao menos, uma letra e um número) </p>
+
+                        <label for="repetir">Repetir a senha:</label>
+                        <input type="password" name="senha_repetir" id="senha_repetir" placeholder="Repita sua senha" value="">
+                    </div>
+                    <div class="btn">
+                        <button type='submit' class="cadastrar">Cadastrar</button>
+                        <button type='reset' class="cancelar">Cancelar</button>
+
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </body>
+</main>
+
+<script type="module" src="./js/validadorCPF.js"></script>
+<script src="./js/formulario.js"></script>
+
+</html>
